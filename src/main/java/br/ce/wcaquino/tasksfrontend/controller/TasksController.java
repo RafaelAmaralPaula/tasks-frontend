@@ -33,7 +33,6 @@ public class TasksController {
 	@GetMapping("")
 	public String index(Model model) {
 		model.addAttribute("todos", getTodos());
-
 		model.addAttribute("version", VERSION);
 		return "index";
 	}
